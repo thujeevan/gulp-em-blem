@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/inDream/gulp-auto-emblem.git"
+    "url": "git+https://github.com/inDream/gulp-auto-emblem.git"
   },
   "keywords": [
     "gulpplugin",
