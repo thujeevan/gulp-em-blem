@@ -1,4 +1,4 @@
-# gulp-auto-emblem
+# gulp-em-blem
 
 This is a gulp plugin to process [Emblem.js](http://emblemjs.com) templates specifically for [Ember](http://emberjs.com/) with plain module.  
 Modified from [gulp-ember-emblem].
