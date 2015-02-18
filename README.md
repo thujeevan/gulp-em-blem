@@ -1,24 +1,25 @@
-# gulp-auto-emblem [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
+# gulp-auto-emblem
 
 This is a gulp plugin to process [Emblem.js](http://emblemjs.com) templates specifically for [Ember](http://emberjs.com/) with plain module.  
 Modified from [gulp-ember-emblem].
 
 ## Usage
 
-First, install _gulp-auto-emblem_:
+First, install _gulp-em-blem_:
 
 ```shell
-npm install gulp-auto-emblem
+# not published, wont work. Copy the source instead
+npm install gulp-em-blem
 ```
 
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var autoEmblem = require('gulp-auto-emblem');
+var emblem = require('srcpath/gulp-em-blem');
 
 gulp.task('templates', function(){
   gulp.src(['client/templates/*.emblem'])
-    .pipe(autoEmblem())
+    .pipe(emblem())
     .pipe(gulp.dest('build/templates/'));
 });
 ```
@@ -40,10 +41,10 @@ Type: `Object`
 
 Compiler options to pass to `Emblem.precompile()`.
 
+## Run tests
 
-[travis-url]: http://travis-ci.org/inDream/gulp-auto-emblem
-[travis-image]: https://secure.travis-ci.org/inDream/gulp-auto-emblem.png?branch=master
-[npm-url]: https://npmjs.org/package/gulp-auto-emblem
-[npm-image]: https://badge.fury.io/js/gulp-auto-emblem.png
+```shell
+./node_modules/.bin/mocha test/test.js
+```
 
 [gulp-ember-emblem]: https://github.com/wbyoung/gulp-ember-emblem

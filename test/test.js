@@ -30,8 +30,8 @@ var parseContent = function(content){
   content = content.toString().replace(/\/\*\*\//g, '');
 };
 
-describe('gulp-ember-emblem', function() {
-  describe('emberEmblemPlugin()', function() {
+describe('gulp-em-blem', function() {
+  describe('emBlemPlugin()', function() {
 
     it('should emit an error when compiling invalid templates', function(done) {
       var stream = emberEmblemPlugin();
