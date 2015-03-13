@@ -39,9 +39,7 @@ describe('gulp-em-blem', function() {
 
       stream.on('error', function(err) {
         err.should.be.an.instanceOf(Error);
-        err.message.should.equal("Emblem syntax error, line 2: " +
-          "Expected BeginStatement or " +
-          "DEDENT but \"\\uEFEF\" found.\n  because\n^");
+        err.message.should.equal("Expected _1BeginStatement, _1DEDENT or end of input but \"\\uEFEF\" found.");
         done();
       });
 
