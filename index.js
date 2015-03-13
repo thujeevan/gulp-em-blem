@@ -3,8 +3,8 @@
 var through = require('through2');
 var path = require('path');
 var gutil = require('gulp-util');
-var Emblem = require('emblem');
-var EmberHandlebars = require('ember-template-compiler').EmberHandlebars;
+var toHbs = require('emblem')['default'].compile;
+var precompile = require('ember-template-compiler').precompile;
 
 var getTemplateName = function(filepath, options) {
     var name;
@@ -34,7 +34,8 @@ module.exports = function(options) {
         var contents = file.contents.toString();
         var compiled = null;
         try {
-            compiled = Emblem.precompile(EmberHandlebars, contents, compilerOptions).toString();
+            var hbs = toHbs(contents).toString();
+            compiled = precompile(hbs, false).toString();
         } catch (err) {
             this.emit('error', err);
         }
