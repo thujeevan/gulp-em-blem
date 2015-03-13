@@ -1,6 +1,6 @@
 {
     "name": "gulp-ember-emblem",
-    "version": "0.1.4",
+    "version": "0.2.0",
     "description": "Gulp task for Emblem.js templates with Ember (Plain module)",
     "homepage": "https://github.com/thujeevan/gulp-em-blem",
     "main": "index.js",
@@ -24,7 +24,7 @@
     "license": "MIT",
     "dependencies": {
         "through2": "^0.6.3",
-        "emblem": "^0.3.18",
+        "emblem": "^0.5",
         "ember-template-compiler": "^1.8.0",
         "gulp-util": "^3.0.2"
     },
